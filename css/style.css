@@ -1,0 +1,316 @@
+@import 'pure.css';
+@import 'grids-responsive.css';
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class*="pure-u"] {
+  font-family: 'Raleway', sans-serif;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  height: 100%;
+}
+section {
+  min-height: 100%;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: 200;
+  padding-top: 150px;
+}
+h1 span {
+  font-weight: 700;
+}
+h2 {
+  font-size: 2.8em;
+  font-weight: 200;
+  text-transform: capitalize;
+  margin-top: 0;
+}
+h3 {
+  font-size: 1.8em;
+  font-weight: 200;
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+.logo {
+  font-size: 3em;
+  font-weight: 200;
+}
+header {
+  position: fixed;
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 5px 21px;
+  z-index: 1;
+}
+.btn {
+  background-color: transparent;
+  padding: 8px 25px;
+  margin: 10px 5px;
+  border: 2px #ffffff solid;
+  border-radius: 20px;
+}
+.learn {
+  margin-top: 30px;
+}
+@media screen and (min-width: 64em) {
+  .learn {
+    margin-top: 0px;
+  }
+}
+.icon {
+  font-size: 3em;
+}
+.une {
+  margin-top: 25px;
+}
+@media screen and (min-width: 64em) {
+  .une {
+    text-align: left;
+    display: flex;
+  }
+}
+.une .ole {
+  padding-left: 10px;
+}
+.deux {
+  margin-top: 25px;
+}
+@media screen and (min-width: 64em) {
+  .deux {
+    text-align: center;
+  }
+}
+.border {
+  background-color: rgba(255, 255, 255, 0.3);
+  position: fixed;
+  display: none;
+}
+@media screen and (min-width: 64em) {
+  .border {
+    display: block;
+  }
+}
+#top {
+  top: 0px;
+  width: 100%;
+  height: 10%;
+}
+#bottom {
+  bottom: 0px;
+  width: 100%;
+  height: 10%;
+}
+#left {
+  top: 0px;
+  width: 5%;
+  height: 100%;
+}
+#right {
+  top: 0px;
+  right: 0px;
+  width: 5%;
+  height: 100%;
+}
+.trait {
+  width: 50px;
+  height: 1px;
+  border: .1px white solid;
+  background-color: #ffffff;
+}
+.carre {
+  width: 20px;
+  height: 20px;
+  border: 1px white solid;
+  transform: rotate(45deg);
+  margin: 0 4px;
+  position: relative;
+  top: -10px;
+}
+.separator {
+  display: flex;
+  justify-content: center;
+}
+.form {
+  width: 90%;
+  margin: 30px 0;
+  padding-bottom: 10px;
+  background-color: transparent;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px #ffffff solid;
+}
+.form::placeholder {
+  color: #ffffff;
+  padding-left: 20px;
+}
+.textarea {
+  padding-bottom: 100px;
+}
+.pure-g > div {
+  box-sizing: border-box;
+}
+.l-box {
+  padding: 1em;
+}
+#nav_normale ul li {
+  display: inline-block;
+  padding-right: 10px;
+}
+#nav_normale {
+  background-color: transparent;
+  display: none;
+}
+#nav_normale a {
+  text-decoration: none;
+  padding-bottom: 20px;
+  margin-right: 20px;
+}
+#nav_normale a:hover {
+  border-bottom: 1px white solid;
+}
+@media screen and (min-width: 64em) {
+  #nav_normale {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+#nav_mobile {
+  position: relative;
+  top: 6px;
+  right: 8px;
+}
+@media screen and (min-width: 64em) {
+  #nav_mobile {
+    display: none;
+  }
+}
+#nav_mobile img {
+  border: 1px white solid;
+  padding: 5px;
+}
+.police_nav {
+  color: white;
+  line-height: 50px;
+  font-size: 1.2em;
+}
+#nav_mobile_content a {
+  display: block;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 10px;
+}
+#nav_mobile:target #nav_mobile_burger {
+  display: none;
+}
+#nav_mobile:not(target) #nav_mobile_burger {
+  display: block;
+}
+#nav_mobile:not(target) #nav_mobile_content {
+  display: none;
+}
+#nav_mobile:target #nav_mobile_content {
+  display: block;
+}
+#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.45)), url(../img/image-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 60px 15px;
+}
+@media screen and (min-width: 64em) {
+  #home {
+    padding: 60px 25%;
+  }
+}
+#home p {
+  font-size: 1.6em;
+}
+#subscribe {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.45)), url(../img/image-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 60px 15px;
+}
+@media screen and (min-width: 64em) {
+  #subscribe {
+    padding: 60px 25%;
+  }
+}
+#subscribe #news {
+  padding: 8px 35px;
+  margin: 10px 5px;
+  border: 2px #ffffff solid;
+  border-radius: 20px;
+  width: 200px;
+}
+#about {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.45)), url(../img/image-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 60px 15px;
+}
+@media screen and (min-width: 64em) {
+  #about {
+    padding: 60px 25%;
+  }
+}
+#services {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.45)), url(../img/image-4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 60px 15px;
+}
+@media screen and (min-width: 64em) {
+  #services {
+    padding: 60px 25%;
+  }
+}
+#contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.45)), url(../img/image-5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 60px 15px;
+}
+@media screen and (min-width: 64em) {
+  #contact {
+    padding: 60px 25%;
+  }
+}
+footer {
+  color: #000000;
+  margin-bottom: 30px;
+}
+footer a {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+@media screen and (min-width: 64em) {
+  footer .social {
+    color: #ffffff;
+    width: 10%;
+    position: fixed;
+    top: 10%;
+    right: -2.5%;
+  }
+}
